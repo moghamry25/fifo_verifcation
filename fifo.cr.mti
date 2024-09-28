@@ -1,0 +1,60 @@
+D:/courses/Digital/Verification/Projects/FIFO/top.sv {1 {vlog -work work -vopt -sv -stats=none D:/courses/Digital/Verification/Projects/FIFO/top.sv
+QuestaSim-64 vlog 2021.1 Compiler 2021.01 Jan 19 2021
+-- Compiling module top
+
+Top level modules:
+	top
+
+} {} {}} D:/courses/Digital/Verification/Projects/FIFO/fif0_monitor.sv {1 {vlog -work work -vopt -sv -stats=none D:/courses/Digital/Verification/Projects/FIFO/fif0_monitor.sv
+QuestaSim-64 vlog 2021.1 Compiler 2021.01 Jan 19 2021
+-- Compiling package fif0_monitor_sv_unit
+-- Importing package fifo_pkg
+-- Importing package fifo_scoreboard
+-- Importing package share_pkg
+-- Importing package package_fifo
+-- Compiling module fifo_monitor
+
+Top level modules:
+	fifo_monitor
+
+} {} {}} D:/courses/Digital/Verification/Projects/FIFO/FIFO_scoreboard_pkg.sv {1 {vlog -work work -vopt -sv -stats=none D:/courses/Digital/Verification/Projects/FIFO/FIFO_scoreboard_pkg.sv
+QuestaSim-64 vlog 2021.1 Compiler 2021.01 Jan 19 2021
+-- Compiling package fifo_scoreboard
+-- Importing package fifo_pkg
+-- Importing package share_pkg
+
+Top level modules:
+	--none--
+
+} {} {}} D:/courses/Digital/Verification/Projects/FIFO/share_pkg.sv {1 {vlog -work work -vopt -sv -stats=none D:/courses/Digital/Verification/Projects/FIFO/share_pkg.sv
+QuestaSim-64 vlog 2021.1 Compiler 2021.01 Jan 19 2021
+-- Compiling package share_pkg
+
+Top level modules:
+	--none--
+
+} {} {}} D:/courses/Digital/Verification/Projects/FIFO/package.sv {1 {vlog -work work -vopt -sv -stats=none D:/courses/Digital/Verification/Projects/FIFO/package.sv
+QuestaSim-64 vlog 2021.1 Compiler 2021.01 Jan 19 2021
+-- Compiling package fifo_pkg
+
+Top level modules:
+	--none--
+
+} {} {}} D:/courses/Digital/Verification/Projects/FIFO/fifo_tb.sv {1 {vlog -work work -vopt -sv -stats=none D:/courses/Digital/Verification/Projects/FIFO/fifo_tb.sv
+QuestaSim-64 vlog 2021.1 Compiler 2021.01 Jan 19 2021
+-- Compiling package fifo_tb_sv_unit
+-- Importing package share_pkg
+-- Importing package fifo_pkg
+-- Compiling module FIFO_tb
+
+Top level modules:
+	FIFO_tb
+
+} {} {}} D:/courses/Digital/Verification/Projects/FIFO/interface.sv {1 {vlog -work work -vopt -sv -stats=none D:/courses/Digital/Verification/Projects/FIFO/interface.sv
+QuestaSim-64 vlog 2021.1 Compiler 2021.01 Jan 19 2021
+-- Compiling interface fifo
+
+Top level modules:
+	--none--
+
+} {} {}}

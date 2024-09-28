@@ -1,0 +1,51 @@
+Coverage Report by instance with details
+
+=================================================================================
+=== Instance: /top/tb
+=== Design Unit: work.FIFO_tb
+=================================================================================
+
+Assertion Coverage:
+    Assertions                       1         1         0   100.00%
+--------------------------------------------------------------------
+Name                 File(Line)                   Failure      Pass 
+                                                  Count        Count
+--------------------------------------------------------------------
+/top/tb/#anonblk#182146786#13#4#/#ublk#182146786#13/immed__16
+                     fifo_tb.sv(16)                     0          1
+
+=================================================================================
+=== Instance: /top/dut
+=== Design Unit: work.FIFO
+=================================================================================
+
+Assertion Coverage:
+    Assertions                       6         6         0   100.00%
+--------------------------------------------------------------------
+Name                 File(Line)                   Failure      Pass 
+                                                  Count        Count
+--------------------------------------------------------------------
+/top/dut/almostempty FIFO.sv(105)                       0          1
+/top/dut/almostfull  FIFO.sv(106)                       0          1
+/top/dut/empty       FIFO.sv(107)                       0          1
+/top/dut/full        FIFO.sv(108)                       0          1
+/top/dut/overflow    FIFO.sv(109)                       0          1
+/top/dut/underflow   FIFO.sv(110)                       0          1
+
+
+ASSERTION RESULTS:
+--------------------------------------------------------------------
+Name                 File(Line)                   Failure      Pass 
+                                                  Count        Count
+--------------------------------------------------------------------
+/top/tb/#anonblk#182146786#13#4#/#ublk#182146786#13/immed__16
+                     fifo_tb.sv(16)                     0          1
+/top/dut/almostempty FIFO.sv(105)                       0          1
+/top/dut/almostfull  FIFO.sv(106)                       0          1
+/top/dut/empty       FIFO.sv(107)                       0          1
+/top/dut/full        FIFO.sv(108)                       0          1
+/top/dut/overflow    FIFO.sv(109)                       0          1
+/top/dut/underflow   FIFO.sv(110)                       0          1
+
+Total Coverage By Instance (filtered view): 100.00%
+
