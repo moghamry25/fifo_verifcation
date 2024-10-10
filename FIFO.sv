@@ -12,19 +12,8 @@ always @(posedge vif.clk or negedge vif.rst_n) begin
 		vif.wr_ack   <= 0 ;
 		vif.overflow <= 0 ;		
 	end
-	else if (({vif.wr_en, vif.rd_en} == 2'b11) && vif.empty  ) begin
-		mem[wr_ptr] <= vif.data_in;
-		vif.wr_ack <= 1;
-		wr_ptr <= wr_ptr + 1;
-		
-	end
-	else if (({vif.wr_en, vif.rd_en} == 2'b11) && !vif.empty && !vif.full  ) begin
-		mem[wr_ptr] <= vif.data_in;
-		vif.wr_ack <= 1;
-		wr_ptr <= wr_ptr + 1;
-		
-	end
-	else if (({vif.wr_en, vif.rd_en} == 2'b10) && count < vif.FIFO_DEPTH) begin
+	
+	else if (vif.wr_en && count < vif.FIFO_DEPTH) begin
 		mem[wr_ptr] <= vif.data_in;
 		vif.wr_ack <= 1;
 		wr_ptr <= wr_ptr + 1;
@@ -46,16 +35,8 @@ always @(posedge vif.clk or negedge vif.rst_n) begin
 		rd_ptr <= 0;
 		vif.underflow <= 0 ;
 	end
-	else if ((({vif.wr_en, vif.rd_en} == 2'b11) && vif.full ) ) begin
-		vif.data_out <= mem[rd_ptr];
-		rd_ptr <= rd_ptr + 1;
-	end
-	else if ((({vif.wr_en, vif.rd_en} == 2'b11) && !vif.full && !vif.empty) ) begin
-		vif.data_out <= mem[rd_ptr];
-		rd_ptr <= rd_ptr + 1;
-		
-	end
-	else if (({vif.wr_en, vif.rd_en} == 2'b01) && count != 0&&!vif.empty) begin
+	
+	else if (vif.rd_en && count != 0&&!vif.empty) begin
 		vif.data_out <= mem[rd_ptr];
 		rd_ptr <= rd_ptr + 1;
 	end

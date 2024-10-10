@@ -20,13 +20,7 @@ initial begin
         vif.wr_en=q.wr_en;
         vif.rd_en=q.rd_en;
         vif.data_in=i;
-        q.wr_ack=vif.wr_ack;
-        q.full=vif.full;
-        q.empty=vif.empty;
-        q.almostfull=vif.almostfull;
-        q.almostempty=vif.almostempty;
-        q.underflow=vif.underflow;
-        q.overflow=vif.overflow;
+        
        
     end
     test_finsh = 1 ;
